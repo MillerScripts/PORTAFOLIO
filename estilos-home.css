@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+    --font-one:'Ubuntu', sans-serif;
+    --principal-color: #d61f99;
+    --trasition: all ease .3s;
+    --second-color: #f9004d;
+    
+}
+
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-one);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*----------------------------------*/
+        /*Menu de navegacion*/
+/*----------------------------------*/
+
+.parteArriba{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.parteArriba h1.portafolio{
+    color: white;
+    width: 59px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: var(--trasition);
+}
+.parteArriba h1.portafolio:hover{
+    font-size: 45px;
+    
+}
+.parteArriba h1.portafolio span{
+    color: var(--second-color)
+}
+
+.parteArriba nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.parteArriba ul li a { 
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: var(--transition);
+}
+.parteArriba a.elemento-final-nav{
+    color:white;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    padding: 10px 24px;
+    overflow: hidden;
+}
+.parteArriba a.elemento-final-nav:hover{
+    color: var(--second-color);
+}
+.parteArriba a.elemento-final-nav::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--second-color);
+    border-radius: 60px;
+    z-index: -1;
+    transition: var(--trasition);
+}
+.parteArriba a.elemento-final-nav:hover::after{
+    top: 49px;
+}
+.parteArriba a.elemento-final-nav::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 47px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    border-radius: 60px;
+    z-index: -1;
+    transition: var(--trasition);
+}
+
+.parteArriba a.elemento-final-nav:hover::before{
+    top: 0;
+    transition: var(--trasition);
+    opacity: 1;
+    color:var(--second-color);
+}
+.parteArriba ul{
+    display: flex;
+    line-height: 45px;
+    gap: 70px;
+}
+.parteArriba ul li a:hover{
+    color: var(--second-color);
+    transition: var(--trasition)
+}
+
+/*----------------------------------*/
+        /*Parte media | home*/
+/*----------------------------------*/
+
+.parteMedia{ 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    justify-content: center;
+    
+}
+.parteMedia .contenedor-input{
+    width: 480px;
+}
+.parteMedia h1{ 
+    font-size: 90px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.parteMedia span{
+    font-size: 30px;
+    color: rgb(228, 178, 227)
+}
+.parteMedia span.texto-h1-parteMedia{
+    color: var(--second-color);
+    font-size: 90px;
+}
+.parteMedia p{
+    font-size: 30px;
+    color:rgb(228, 178, 227)
+}
+.parteMedia input.input-1{
+    width: 300px;
+    margin-top: 20px;
+    border: 3px solid var(--second-color);
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    transition: var(--trasition);
+}
+.parteMedia input.input-1:active{
+    border: 3px solid var(--principal-color);
+    transition: var(--trasition);
+}
+.parteMedia input.input-1::placeholder{
+    color: black;
+    font-size: 15px;
+}
+.parteMedia span.input-2 {
+    font-size: 17px;
+    padding: 7px 20px;
+    color: white; 
+    cursor: pointer;
+    transition: var(--trasition);
+    position: relative;
+    z-index: 1;
+    line-height: 13px;
+    border: 3px solid rgba(0,0,0,0.4);
+}
+.parteMedia span.input-2::after{
+    content: " ";
+    position: absolute;
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: var(--trasition);
+}
+.parteMedia span.input-2::before{
+    content: " ";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0px;
+    border-radius: 50px;
+    opacity: 0;
+}
+.parteMedia span.input-2:hover::after{
+    opacity: 0;
+}
+
+.parteMedia span.input-2:hover::before{
+    opacity: 1;
+    transition: var(--trasition);
+    z-index: -1;
+}
+
+.parteMedia span.input-2:hover {
+    color: var(--second-color)
+}
+
+.titulo-alerta {
+    color: white
+}
+.titulo-alerta2 {
+    color: white
+}

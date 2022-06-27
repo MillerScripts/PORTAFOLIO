@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+    --fuente-principal: 'Josefin Sans', sans-serif;
+    --color-fondo: #1b1a1a;
+    --second-color: #f9004d;
+    --color-texto-main: rgb(228, 178, 227);
+
+}
+.services .flex-services h2{
+    color: white;
+    margin-bottom: 15px;
+    font-family: var(--fuente-principal);
+}
+.services{
+    background-image: radial-gradient(circle at 50% -20.71%, #424340 0, #424340 3.85%, #414340 7.69%, #414340 11.54%, #404341 15.38%, #404341 19.23%, #404341 23.08%, #3f4342 26.92%, #3f4342 30.77%, #3f4343 34.62%, #3f4343 38.46%, #3f4343 42.31%, #3f4344 46.15%, #3f4344 50%, #3f4344 53.85%, #3f4345 57.69%, #404345 61.54%, #404345 65.38%, #404345 69.23%, #414245 73.08%, #414245 76.92%, #424245 80.77%, #424245 84.62%, #424245 88.46%, #434245 92.31%, #434244 96.15%, #444244 100%);
+}
+.services .flex-services p{
+    color:white;
+    margin-top: 20px;
+    width: 230px;
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    font-family: var(--fuente-principal);
+}
+
+.services .flex-services .services1,
+.services .flex-services .services2,
+.services .flex-services .services3{
+    background-color: var(--color-fondo);
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 13px 5px 5px 0px rgba(32, 32, 32, 0.75);
+}
+.services .flex-services .services1{
+    grid-area: servicio1;
+}
+.services .flex-services .services2{
+    grid-area: servicio2;
+}
+.services .flex-services .services3{
+    grid-area: servicio3;
+}
+
+.services .flex-services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "servicio1 servicio2 servicio3"
+    ;
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    grid-gap: 90px;
+    font-size: 20px;
+}
+
+i { 
+    font-size: 30px;
+    margin: 30px 0;
+    color: var(--second-color)
+}
+
+button.botones{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--second-color);
+    color:white;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+button.botones:hover{
+    color: var(--second-color);
+    background: #fff;
+}
+
+.titulo-services{
+     color:white;
+     grid-area: titulo;
+     font-size: 80px;
+     height: 100px;
+     font-style: italic;
+     font-family: var(--fuente-principal);
+}
+
+.titulo-services strong {
+    color: var(--second-color);
+    font-weight: normal;
+}

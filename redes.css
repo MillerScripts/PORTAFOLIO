@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root { 
+    --second-color: #f9004d;
+    --principal-color: #d61f99;
+    --fuente: 'Josefin Sans', sans-serif;
+}
+
+section.contact .contenedor-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+section.contact .contenedor-contact .texto-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-family: var(--fuente);
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+section.contact .contenedor-contact .texto-redes p{
+    width: 550px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--fuente);
+}
+section.contact .contenedor-contact .texto-redes h2{
+    font-family: var(--fuente);
+}
+
+section.contact .contenedor-contact .texto-redes h2 span strong{
+    color: var(--second-color);
+    font-family: var(--fuente)
+}
+section.contact .contenedor-contact .contenedor-redes{
+    display: flex;     
+    justify-content: center;
+    gap: 30px;
+    
+}
+section.contact .contenedor-contact .contenedor-redes i.i-class{
+    color:white;
+    background: var(--second-color);
+    padding:17px;
+    border-radius: 30px;
+    transition: all ease .3s;
+
+}
+section.contact .contenedor-contact .contenedor-redes i.i-class:hover{
+    transition: all ease .3s;
+    color: var(--second-color);
+    background-color: white; 
+}
+
+section.contact .contenedor-contact .contenedor-redes i#i-id{
+    width: 64px;
+    text-align: center
+}
+

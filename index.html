@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos-home.css">
+    <link rel="stylesheet" href="./css/estilos-aboutMe.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/redes.css">
+    <title>Portfolio | MiK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /></script>
+</head>
+<body>
+
+    <div class="parteArriba" id="home">
+        <nav>
+            <div class="h1">
+                <h1 class="portafolio">Port<span>folio</span></h1s>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="a-aboutme">About me</a></li>
+                <li><a href="#" id="servicios">Services</a></li>
+                <li><a href="#" id="contacto">contact</a></li>
+            </ul>
+            <a href="#" class="elemento-final-nav">Suscribe</a>
+        </nav>
+        <div class="parteMedia">
+            <span>Hello, my name is</span>
+            <h1>Miller <span class="texto-h1-parteMedia">Kaled</span></h1>
+            <p>I'am a Web developer</p>
+            <div class="contenedor-input">
+                <input type="text" placeholder="Enter your mail" class="input-1">
+                <span class="input-2">Lets Start</span>   
+            </div>
+        </div>
+    </div>
+    <div class="parteMain" id="aboutMe"> 
+        <div class="contenedor-parte">
+            <img id="img" src="./img/main-img.png" alt="imagen.img.png">  
+            <div class="contenido-parteMain">
+              <h2>About Me</h2>
+              <p><span>Developer <strong >& Designer</strong></span></p>
+              <p class="texto-main">I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
+              <div class="botones">
+                <button>Les's Talk</button>
+                <button id="btn">To return</button>
+              </div>
+            </div>
+        </div>
+        <div class="services" id="servicio">
+            
+            <div class="flex-services">
+                    <span class="titulo-services"><center><strong>Our Services</strong> 
+                     available to the <strong>community</strong> 
+                    </center></span>
+                                
+                <div class="services1">
+                    <i class="fa-solid fa-bars"></i>
+                    <h2>Web develepment</h2>
+                    <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+                    <button class="botones" id="botones" onclick="contacto()"><center>Read More</center></button>
+                </div>
+                <div class="services2">
+                    <i class="fas fa-user"></i>
+                    <h2>Web develepment</h2>
+                    <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+                    <button class="botones" id="botones" onclick="contacto()"><center>Read More</center></button>
+                </div>
+                <div class="services3">
+                    <i class="fa-regular fa-bell"></i>
+                    <h2>Web develepment</h2>
+                    <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+                    <button class="botones" id="botones" onclick="contacto()"><center>Read More</center></button>
+                </div>
+            </div>
+        </div> 
+        <section class="contact" id="contact">
+            <div class="contenedor-contact">
+                <div class="texto-redes">
+                <h2>Miller <span><strong>Kaled</strong></span></h2>
+                <p> For more HTML, CSS, and coding tutorial. Please click on the link below to suscribe to my channel</p>
+                </div>
+                <div class="contenedor-redes">
+                <a href="#"><i id="i-id" class="fa-brands fa-facebook-f i-class"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp i-class"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter i-class"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
